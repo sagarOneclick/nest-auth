@@ -1,5 +1,7 @@
+import { Injectable } from "@nestjs/common";
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
+@Injectable()
 @Entity()
 export class User extends BaseEntity {
     @PrimaryGeneratedColumn()
